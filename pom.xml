@@ -11,9 +11,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<junit.version>1</junit.version>
-		<lombok.version>1</lombok.version>
-		<log4j.version>1</log4j.version>
+		<junit.version>4.13.2</junit.version>
+		<lombok.version>1.18.24</lombok.version>
+		<log4j.version>1.2.17</log4j.version>
 		<mysql.version>8.0.25</mysql.version>
 		<druid.version>1.2.9</druid.version>
 		<mybatis.spring.boot>2.1.4</mybatis.spring.boot>
@@ -26,6 +26,7 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>Hoxton.SR9</version>
+				<!-- 负责定义，并不引入依赖 -->
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -62,7 +63,7 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<build>
+	<!--<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -73,5 +74,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build>-->
 </project>
