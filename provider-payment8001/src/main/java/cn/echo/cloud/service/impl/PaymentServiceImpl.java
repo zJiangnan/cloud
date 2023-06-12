@@ -4,7 +4,6 @@ import cn.echo.cloud.mapper.PaymentMapper;
 import cn.echo.cloud.entity.Payment;
 import cn.echo.cloud.service.PaymentService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,11 +18,10 @@ import java.util.List;
  * @see PaymentServiceImpl
  **/
 @Service
-//@RequiredArgsConstructor
+@RequiredArgsConstructor
 public class PaymentServiceImpl implements PaymentService {
 
-    @Autowired
-    private PaymentMapper paymentMapper;
+    private final PaymentMapper paymentMapper;
 
     @Override
     public int create(Payment payment) {

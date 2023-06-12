@@ -33,10 +33,6 @@ public class Result<T> {
         return new Result<>(200, msg, "");
     }
 
-    public static Result<String> ok() {
-        return new Result<>(200, "成功", "");
-    }
-
     public static Result<String> error(String msg) {
         return new Result<>(500, msg, "");
     }
