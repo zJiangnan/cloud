@@ -9,6 +9,7 @@
 
 	<modules>
 		<module>provider-payment8001</module>
+		<module>consumer-order80</module>
 	</modules>
 
 	<properties>
