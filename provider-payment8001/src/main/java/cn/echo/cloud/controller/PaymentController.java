@@ -25,7 +25,7 @@ public class PaymentController {
     private final PaymentService paymentService;
 
     @PostMapping("/create")
-    public Result<String> create(Payment payment) {
+    public Result<String> create(@RequestBody Payment payment) {
         int i = paymentService.create(payment);
         log.info("插入结果：{}", i);
         if (i > 0) {
